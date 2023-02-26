@@ -1,6 +1,6 @@
 /** 
 # Author .......: Baris Caglar
-# Description ..: This scripts Reads CSV file and parse it to an array then opens given links to automatically then close it all.
+# Description ..: This script reads a CSV file, parses it into an array, automatically opens any links provided, and then closes everything.
 # Version     ..: 1.0
 # Exit Script ..: Ctrl + C
 # Dependencies .: open, csv-parse, prompt-sync 
