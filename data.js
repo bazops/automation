@@ -56,7 +56,11 @@ fs.createReadStream(filename)
         let arrayLength = my_array.length;
         for (let i = 0; i < arrayLength; i++) {
         console.log(my_array[i]);
-        //open("https://webaddress/"+my_array[i], '_blank', {app: 'google chrome'});
+        // wait three seconds to avoid rate limiting.
+            setTimeout(function timer(){
+            console.log("wait 3sn for "+my_array[i]);
+        open("https://webaddress/"+my_array[i], '_blank', {app: 'google chrome'});
+                        }, i * 3000);
         }
     })
     .on("error", function (error) {
